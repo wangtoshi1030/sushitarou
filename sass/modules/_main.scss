@@ -1,0 +1,92 @@
+
+@mixin btn($col){
+    background-color: $col;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+@mixin ppos($col,$top,$lef){
+        color: $col;
+        position: relative;
+        top: $top;
+        left: $lef;
+}
+
+.mcontainer{
+  display: flex;
+}
+
+
+main{
+  width: 70%;
+  background-color: black;
+  .btn1{
+    @include btn(red);
+    position: relative;
+    left: 300px;
+    a{
+      text-decoration: none;
+      p{
+        @include ppos(white,100px,80px);
+      }
+    }
+  }
+}
+
+aside{
+  width: 30%;
+  background-color: aqua;
+}
+
+main{
+  .btn2{
+    position: relative;
+    left: 200px;
+    @include btn(blue);
+    a{
+      text-decoration: none;
+      p{
+        @include ppos(white,100px,80px);
+      }
+    }
+  }
+}
+
+main{
+  .btn3{
+    position: relative;
+    left: 400px;
+    top: -200px;
+    @include btn(green);
+    a{
+      text-decoration: none;
+      p{
+        @include ppos(white,100px,80px);
+      }
+    }
+  }
+}
+
+// main{
+//   .btn1{
+//     background-color: red;
+//     width: 200px;
+//     height: 200px;
+//     border-radius: 50%;
+//   }
+// }
+
+
+
+
+
+// @mixin btn($col){
+//   background-color: $col;
+//   width: 200px;
+//   height: 200px;
+//   border-radius: 50%;
+// }
+
+
+
