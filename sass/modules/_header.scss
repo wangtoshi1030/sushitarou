@@ -1,0 +1,27 @@
+.container{
+  width: 100%;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: pink;
+  align-items: center;
+
+  h1{
+    font-size: 30px;
+  }
+
+  ul{
+    display: flex;
+    
+    a{
+    li{
+      font-size: 15px;
+      margin-right: 20px;
+    }
+  }
+
+  }
+}
