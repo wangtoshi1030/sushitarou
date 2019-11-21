@@ -18,8 +18,9 @@
 }
 
 
-main{
+.hpage{
   width: 70%;
+  height: 80vh;
   background-color: black;
   .btn1{
     @include btn(red);
@@ -39,7 +40,7 @@ aside{
   background-color: aqua;
 }
 
-main{
+.hpage{
   .btn2{
     position: relative;
     left: 200px;
@@ -53,7 +54,7 @@ main{
   }
 }
 
-main{
+.hpage{
   .btn3{
     position: relative;
     left: 400px;
