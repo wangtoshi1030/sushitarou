@@ -1,17 +1,5 @@
 
-@mixin footer($fcol){
-  background-color: $fcol;
-  height: 10vh;
 
-  p{
-    height: 10vh;
-    color: black;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 // main
 .m-footer{

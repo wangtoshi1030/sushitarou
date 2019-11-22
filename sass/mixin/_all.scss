@@ -1,0 +1,63 @@
+//header
+@mixin header($posi, $scol, $ecol) {
+  background: linear-gradient($posi, $scol, $ecol);
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    font-size: 30px;
+  }
+  ul {
+    display: flex;
+    a {
+      text-decoration: none;
+      color: black;
+      li {
+        font-size: 15px;
+        padding: 0 10px;
+        border-right: 1px solid black;
+      }
+    }
+  }
+}
+
+
+//main
+//ボタンの設定
+@mixin btn($col) {
+  background-color: $col;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+//pタグの設定
+@mixin ppos($col, $top, $lef) {
+  color: $col;
+  position: relative;
+  top: $top;
+  left: $lef;
+}
+//main > 上下左右幅の設定
+ @mixin settb($arrangement){
+    height: 50%;
+    display: flex;
+    justify-content: $arrangement;
+    align-items: center;
+}
+
+
+//footer
+@mixin footer($fcol){
+  background-color: $fcol;
+  height: 10vh;
+
+  p{
+    height: 10vh;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

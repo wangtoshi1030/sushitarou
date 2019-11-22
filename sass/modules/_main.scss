@@ -1,25 +1,3 @@
-//ボタンの設定
-@mixin btn($col) {
-  background-color: $col;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-//pタグの設定
-@mixin ppos($col, $top, $lef) {
-  color: $col;
-  position: relative;
-  top: $top;
-  left: $lef;
-}
-//main > 上下左右幅の設定
- @mixin settb($arrangement){
-    height: 50%;
-    display: flex;
-    justify-content: $arrangement;
-    align-items: center;
-}
-
 .mcontainer {
   display: flex;
 }
