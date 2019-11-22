@@ -1,69 +1,74 @@
-
-@mixin btn($col){
-    background-color: $col;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+//ボタンの設定
+@mixin btn($col) {
+  background-color: $col;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+//pタグの設定
+@mixin ppos($col, $top, $lef) {
+  color: $col;
+  position: relative;
+  top: $top;
+  left: $lef;
+}
+//main > 上下左右幅の設定
+ @mixin settb($arrangement){
+    height: 50%;
+    display: flex;
+    justify-content: $arrangement;
+    align-items: center;
 }
 
-@mixin ppos($col,$top,$lef){
-        color: $col;
-        position: relative;
-        top: $top;
-        left: $lef;
-}
-
-.mcontainer{
+.mcontainer {
   display: flex;
 }
 
-
-.hpage{
+.hpage {
   width: 70%;
   height: 80vh;
   background-color: black;
-  .btn1{
-    @include btn(red);
-    position: relative;
-    left: 300px;
-    a{
-      text-decoration: none;
-      p{
-        @include ppos(white,100px,80px);
+  .mtop {
+    @include settb(center);
+    .btn1 {
+      @include btn(red);
+      a {
+        text-decoration: none;
+        p {
+          @include ppos(white, 100px, 80px);
+        }
       }
     }
   }
 }
 
-aside{
+aside {
   width: 30%;
   background-color: aqua;
 }
 
-.hpage{
-  .btn2{
-    position: relative;
-    left: 200px;
-    @include btn(blue);
-    a{
-      text-decoration: none;
-      p{
-        @include ppos(white,100px,80px);
+.hpage {
+  .mbottom {
+    @include settb(space-around);
+    .btn2 {
+      @include btn(blue);
+      a {
+        text-decoration: none;
+        p {
+          @include ppos(white, 100px, 80px);
+        }
       }
     }
   }
 }
 
-.hpage{
-  .btn3{
-    position: relative;
-    left: 400px;
-    top: -200px;
+.hpage {
+  .btn3 {
     @include btn(green);
-    a{
+    a {
       text-decoration: none;
-      p{
-        @include ppos(white,100px,80px);
+      p {
+        @include ppos(white, 100px, 80px);
       }
     }
   }
@@ -78,16 +83,9 @@ aside{
 //   }
 // }
 
-
-
-
-
 // @mixin btn($col){
 //   background-color: $col;
 //   width: 200px;
 //   height: 200px;
 //   border-radius: 50%;
 // }
-
-
-
