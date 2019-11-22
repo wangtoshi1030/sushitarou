@@ -2,13 +2,17 @@
 .container{
   width: 100%;
 }
-
-header {
+@mixin hcolor($col) {
+  background-color: $col;  
   height: 10vh;
   display: flex;
   justify-content: space-around;
-  background-color: pink;
   align-items: center;
+}
+
+
+header {
+  @include hcolor(red);
 
   h1{
     font-size: 30px;
