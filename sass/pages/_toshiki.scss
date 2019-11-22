@@ -1,0 +1,15 @@
+.toshiki-container{
+    width: 80%;
+    margin: 0 auto;
+    .section{
+        .display{
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            .pic{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
