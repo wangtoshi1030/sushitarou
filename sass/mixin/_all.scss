@@ -6,7 +6,8 @@
   justify-content: space-around;
   align-items: center;
   h1 {
-    font-size: 30px;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+    font-size: 50px;
   }
   ul {
     display: flex;
@@ -14,9 +15,9 @@
       text-decoration: none;
       color: black;
       li {
-        font-size: 15px;
-        padding: 0 10px;
-        border-right: 1px solid black;
+        font-size: 20px;
+        padding: 10px 30px;
+        border-right: 1px solid rgb(213, 213, 213);
       }
     }
   }
@@ -51,7 +52,6 @@
 @mixin footer($fcol){
   background-color: $fcol;
   height: 10vh;
-
   p{
     height: 10vh;
     color: black;
