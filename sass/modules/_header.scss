@@ -5,7 +5,8 @@
 
 //main
 .m-header {
-  @include header(top,red, yellow);
+  @include header(top,green, rgb(0, 255, 157));
+  border-bottom: #ffffff 1px solid;
 }
 
 //ai
