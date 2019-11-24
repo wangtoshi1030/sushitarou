@@ -1,9 +1,49 @@
+// @mixin changePlace() {
+//   display: flex;
+//   flex-direction: column;
+// }
+// $sp:480px;
+// @mixin breakpoint {
+//   @media (max-width: ($sp)) {
+//       // @content changePlace();
+//       @include changePlace();
+//   }
+// }
+
+@mixin column(){
+  display: flex;
+  flex-direction: column;
+}
+
+$sp:480px;
+@mixin abreakpoint1() {
+  @media screen and (max-width:$sp) {
+    @include column();
+  }
+}
+@mixin abreakpoint2() {
+  @media screen and (max-width:$sp) {
+    @include textboxFS();
+  }
+}
+
+@mixin textboxFS(){
+  .textbox{
+    .thema{
+      font-size: 10px;
+    }
+    .themap{
+      font-size: 10px;
+    }
+  }
+}
+
 .a-container {
   font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-
   width: 95%;
   margin: 0 auto;
   .a-introduction{
+    opacity: 0;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -29,8 +69,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 400px;
+  height: 50vh;
   border-top: 1px solid rgb(238, 238, 238);
+  @include abreakpoint1();
   img{
     width: 300px;
     height: 300px;
