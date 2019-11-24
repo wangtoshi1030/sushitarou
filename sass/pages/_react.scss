@@ -9,7 +9,7 @@
   background: linear-gradient(transparent 0%, #fff799 0%);
   font-weight: bold; 
   border-radius:6px;
-  width: 61%;
+  width: 61%;text-align: center;
   }
 
 // メイン
@@ -37,11 +37,6 @@ h2{
   justify-content: space-between;
   border-top: 1px solid gray;  
 
-  .text:nth-child(odd){
-  display: flex;
-  flex-direction: row-reverse;
-  }
-
   img{
     width: 30%;
     height: auto;
@@ -61,6 +56,11 @@ h2{
       font-size: 20px;
     }
   }
+}
+
+.r-explain:nth-child(even) {
+  display: flex;
+flex-direction: row-reverse;
 }
 
 .r-words{
