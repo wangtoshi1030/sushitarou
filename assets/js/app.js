@@ -41,6 +41,17 @@ $(function(){
         console.log(124);
         $(".btn3").css('background-color', 'green');
     })
+
+
+    // $(".push").on("click",function(){
+    //     console.log("タッチ");
+    //     $(".push")
+    //     .siblings(".none")
+    //     .slideToggle();
+    // });
+
+
+
 })
 
 

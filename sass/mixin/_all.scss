@@ -61,3 +61,10 @@
     align-items: center;
   }
 }
+
+
+
+
+@mixin header-hover() {
+  color: white;
+}
