@@ -1,6 +1,5 @@
 $(function () {
 
-
   // topまでスクロールするボタン
   // sass > _main.sass > @mixin scrollbtn()  とリンク
   $(".scroll").on("click", function () {
