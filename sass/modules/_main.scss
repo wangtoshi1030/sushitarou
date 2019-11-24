@@ -28,9 +28,7 @@
 }
 
 .hpage {
-
   background-image: url(../img/paper.jpeg);
-
   .mbottom {
     @include settb(space-around);
     .btn2 {
