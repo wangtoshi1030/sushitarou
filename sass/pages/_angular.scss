@@ -3,6 +3,12 @@
   flex-direction: column;
 }
 
+.a-header{
+  a:hover{
+    @include header-hover();
+  }
+}
+
 $sp:480px;
 @mixin abreakpoint1() {
   @media screen and (max-width:$sp) {
