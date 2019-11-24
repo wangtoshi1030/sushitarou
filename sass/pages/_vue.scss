@@ -95,6 +95,15 @@
     }
 }
 
+
+.v-header{
+    a:hover{
+        @include header-hover();
+    }
+}
+
+
+
 .red{
     @include all-red();
 }

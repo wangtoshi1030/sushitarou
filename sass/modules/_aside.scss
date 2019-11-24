@@ -28,6 +28,9 @@
         border-bottom: 2px solid blue;
         @include same-things();
     }
+    .none{
+        display: none;
+    }
     .angular-green{
         color: green;
         border-bottom: 2px solid green;
@@ -47,7 +50,7 @@
 
 .m-header{
     a:hover{
-        color: white;
+       @include header-hover();
     }
 }
 
