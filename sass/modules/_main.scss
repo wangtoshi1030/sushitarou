@@ -12,8 +12,9 @@
       @include btn(red);
       a {
         text-decoration: none;
+        font-size: 30px;
         p {
-          @include ppos(white, 100px, 80px);
+          @include ppos(white, 86px, 68px);
         }
       }
     }
@@ -27,14 +28,18 @@
 }
 
 .hpage {
+
+  background-image: url(../img/paper.jpeg);
+
   .mbottom {
     @include settb(space-around);
     .btn2 {
       @include btn(blue);
       a {
         text-decoration: none;
+        font-size: 30px;
         p {
-          @include ppos(white, 100px, 80px);
+          @include ppos(white, 86px, 68px);
         }
       }
     }
@@ -46,8 +51,9 @@
     @include btn(green);
     a {
       text-decoration: none;
+      font-size: 30px;
       p {
-        @include ppos(white, 100px, 80px);
+        @include ppos(white, 86px, 63px);
       }
     }
   }
