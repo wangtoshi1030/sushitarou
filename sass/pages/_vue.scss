@@ -17,9 +17,10 @@
 }
 
 @mixin picture() {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    border: 2px solid yellow;
 }
 
 @mixin summarise {
@@ -97,4 +98,14 @@
 .red{
     @include all-red();
 }
-
+@mixin changePlace() {
+    display: flex;
+    flex-direction: column;
+}
+$sp:480px;
+@mixin breakpoint {
+    @media (max-width: ($sp)) {
+        // @content changePlace();
+        @include changePlace();
+    }
+}
