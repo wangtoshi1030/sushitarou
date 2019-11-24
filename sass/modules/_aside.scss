@@ -1,7 +1,6 @@
 
 @mixin same-things(){
     font-size: 30px;
-    margin-bottom: 100px;
     padding-left: 30px;
 }
 
@@ -50,7 +49,7 @@
 
 .m-header{
     a:hover{
-       @include header-hover();
+    @include header-hover();
     }
 }
 
@@ -58,4 +57,15 @@
 .push:hover{
     background-color: gray;
     color: white;
+}
+
+.text-grp{
+    height: 30%;
+
+    .font{
+        font-size: 25px;
+        line-height: 30px;
+        padding-top: 23px;
+
+    }
 }
